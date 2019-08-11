@@ -1,0 +1,13 @@
+## Rules for the test
+- You need to match the rendering of the page to img/NavTestOutcome1.png
+- Create your own HTML page called index.html to reflect the markup that will be required to create the navigation
+- You will only be allowed to style classes and not elements
+- Ensure you use a BEM strategy for your classes - [BEM](http://getbem.com/introduction/)
+- *Each* top level of navigation must have 3 levels of markup beneath it with only the active level displaying children
+- Be sure to show the active pathway as per the image
+- All CSS must go in css/project.css
+- We have started you off with some normalisation: main.css and normalize.css must be included in your html file
+- The fonts required are Arial and Monserrat. Monserrat can be loaded from Google
+- The results should be pixel perfect in Chrome only
+- CSS must be vanilla (not sass or less)
+- All rules are in px
