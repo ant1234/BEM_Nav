@@ -1,5 +1,5 @@
 .parent {
-  font-family: "Arial", sans-serif;
+  font-family: 'Montserrat', 'Arial', sans-serif;
   background: white;
 }
 .parent__title {
@@ -52,6 +52,24 @@
 }
 .child__copy--open {
   display: block;
+}
+
+.parent-active {
+  color: darkgreen;
+  display:block;
+}
+
+.child-active {
+  color: darkred;
+  display:block;
+}
+
+.parent-inactive {
+  color: gray;
+}
+
+.child-inactive {
+  color: gray;
 }
 
 body {
