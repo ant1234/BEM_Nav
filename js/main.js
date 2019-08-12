@@ -7,7 +7,7 @@ var child_copy   = '.js-child-copy';
 $title.on('click', function() {
 
   $(this).next(copy).slideToggle();
-  $(this).parent().siblings().children().next().toggleClass('active').slideUp();
+  $(this).parent().siblings().children().next().slideUp();
   return false;
 
 });
@@ -15,7 +15,7 @@ $title.on('click', function() {
 $child_title.on('click', function() {
 
   $(this).next(child_copy).slideToggle();
-  $(this).parent().siblings().children().next().toggleClass('active').slideUp();
+  $(this).parent().siblings().children().next().slideUp();
   return false;
 
 });

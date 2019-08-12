@@ -1,9 +1,6 @@
 .parent {
-  max-width: 100%;
-  margin: 4rem auto;
-  width: 90%;
   font-family: "Arial", sans-serif;
-  background: #f4f4f4;
+  background: white;
 }
 .parent__title {
   font-size: 0.7rem;
@@ -15,10 +12,10 @@
   cursor: pointer;
   transition: .3s ease;
   border-bottom: #222222;
+  border-bottom: 1px solid gray;
+  margin:0;
 }
-.parent__title:hover {
-  background: white;
-}
+
 .parent__copy {
   display: none;
   padding: 1rem 1.5rem 2rem 1.5rem;
@@ -29,6 +26,20 @@
 }
 .child__copy--open {
   display: block;
+}
+
+.child__title {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 1rem 1.5rem;
+  background: white;
+  color: gray;
+  cursor: pointer;
+  transition: .3s ease;
+  border-bottom: #222222;
+  border-bottom: 1px solid gray;
+  margin:0;
 }
 
 .child__copy {
@@ -44,5 +55,5 @@
 }
 
 body {
-  background: #222;
+  background: white;
 }
