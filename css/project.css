@@ -1,11 +1,11 @@
-.accordion {
-  max-width: 600px;
+.parent {
+  max-width: 100%;
   margin: 4rem auto;
   width: 90%;
   font-family: "Arial", sans-serif;
   background: #f4f4f4;
 }
-.accordion__title {
+.parent__title {
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -14,11 +14,12 @@
   color: gray;
   cursor: pointer;
   transition: .3s ease;
+  border-bottom: #222222;
 }
-.accordion__title:hover {
+.parent__title:hover {
   background: white;
 }
-.accordion__copy {
+.parent__copy {
   display: none;
   padding: 1rem 1.5rem 2rem 1.5rem;
   color: gray;
@@ -26,10 +27,21 @@
   font-size: 14px;
   font-weight: 500;
 }
-.accordion__copy--open {
+.child__copy--open {
   display: block;
 }
 
+.child__copy {
+  display: none;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+  color: gray;
+  line-height: 1.6;
+  font-size: 14px;
+  font-weight: 500;
+}
+.child__copy--open {
+  display: block;
+}
 
 body {
   background: #222;
