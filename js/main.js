@@ -5,12 +5,16 @@ var child_copy   = '.js-child-copy';
 
 $('.child__copy').hide();
 
+
+
+
 //
 // Slide and active state functionality for parent nav
 //
 $parent_title.click(function (e) {
 
-  $(this).toggleClass('parent--active');
+  $parent_title.not(this).removeClass("parent--active");
+  $(this).toggleClass("parent--active");
   $(this).next(parent_copy).slideToggle();
   $(this).parent().siblings().children().next().slideUp();
   return false;
@@ -22,7 +26,8 @@ $parent_title.click(function (e) {
 //
 $child_title.click(function (e) {
 
-  $(this).toggleClass('child--active');
+  $child_title.not(this).removeClass("child--active");
+  $(this).toggleClass("child--active");
   $(this).next(child_copy).slideToggle();
   $(this).parent().siblings().children().next().slideUp();
   return false;
