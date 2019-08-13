@@ -22,6 +22,7 @@
   color: gray;
   line-height: 1.6;
   font-size: 14px;
+  font-family: "Arial", sans-serif;
   font-weight: 500;
 }
 .child__copy--open {
@@ -38,7 +39,7 @@
   cursor: pointer;
   transition: .3s ease;
   border-bottom: #222222;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px dashed gray;
   margin:0;
 }
 
@@ -49,27 +50,20 @@
   line-height: 1.6;
   font-size: 14px;
   font-weight: 500;
+  font-family: "Arial", sans-serif;
 }
 .child__copy--open {
   display: block;
 }
 
-.parent-active {
-  color: darkgreen;
+.parent--active {
+  color: green;
   display:block;
 }
 
-.child-active {
-  color: darkred;
-  display:block;
-}
-
-.parent-inactive {
-  color: gray;
-}
-
-.child-inactive {
-  color: gray;
+.child--active {
+  color:red;
+  display: block;
 }
 
 body {
