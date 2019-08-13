@@ -3,10 +3,10 @@
   background: white;
 }
 .parent__title {
-  font-size: 0.7rem;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding: 1rem 1.5rem;
+  padding: 16px 24px;
   background: white;
   color: gray;
   cursor: pointer;
@@ -18,7 +18,7 @@
 
 .parent__copy {
   display: none;
-  padding: 1rem 1.5rem 2rem 1.5rem;
+  padding: 16px 24px 32px 24px;
   color: gray;
   line-height: 1.6;
   font-size: 14px;
@@ -30,10 +30,10 @@
 }
 
 .child__title {
-  font-size: 0.7rem;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding: 1rem 1.5rem;
+  padding: 16px 24px;
   background: white;
   color: gray;
   cursor: pointer;
@@ -45,7 +45,7 @@
 
 .child__copy {
   display: none;
-  padding: 1rem 1.5rem 2rem 1.5rem;
+  padding: 16px 24px 32px 24px;
   color: gray;
   line-height: 1.6;
   font-size: 14px;
