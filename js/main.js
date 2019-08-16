@@ -1,35 +1,46 @@
-var $parent_title = $('.js-title');
-var parent_copy   = '.js-copy';
-var $child_title = $('.js-child-title');
-var child_copy   = '.js-child-copy';
+var $title = $('.js-title');
+var copy   = '.js-copy';
 
-$('.child__copy').hide();
-
-
-
+$('.child__copy--open').hide();
 
 //
-// Slide and active state functionality for parent nav
+// slide nav out and give active state
 //
-$parent_title.click(function (e) {
-
-  $parent_title.not(this).removeClass("parent--active");
-  $(this).toggleClass("parent--active");
-  $(this).next(parent_copy).slideToggle();
-  $(this).parent().siblings().children().next().slideUp();
+$title.on('click', function() {
+  var $element = $(this);
+  triggerAccordian($element);
   return false;
-
 });
 
-//
-// Slide and active state functionality for child nav
-//
-$child_title.click(function (e) {
+function triggerAccordian($element){
 
-  $child_title.not(this).removeClass("child--active");
-  $(this).toggleClass("child--active");
-  $(this).next(child_copy).slideToggle();
-  $(this).parent().siblings().children().next().slideUp();
+  // highlight the nav text green if active
+  if($element.hasClass('parent__title')) {
+
+    if($element.hasClass('parent--active')){
+      $element.removeClass('parent--active');
+    } else {
+      $title.removeClass('child--active');
+      $(copy).hide();
+      $('.parent__title').not($element).removeClass("parent--active");
+      $element.addClass('parent--active');
+    }
+
+  // highlight the nav text green if active
+  } else {
+
+    if($element.hasClass('child--active')){
+      $element.removeClass('child--active');
+    } else {
+      $('.child__title').not($element).removeClass("child--active");
+      $element.addClass('child--active');
+    }
+
+  }
+
+  // Toggle accordian
+  $element.next(copy).slideToggle();
+  $element.parent().siblings().children().next().slideUp();
   return false;
+}
 
-});
